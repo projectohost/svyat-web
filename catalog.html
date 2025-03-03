@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing Store</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+        <header>
+            <nav>
+                <a href="./index.html">Головна</a>
+                <a href="./catalog.html">Чоловічий</a>
+                <a href="./catalog.html">Жіночий</a>
+                <a href="./catalog.html">Дитячий</a>
+                <a href="#">Контакти</a>
+            </nav>
+        </header>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Чоловічий</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Жіночий</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Дитячий</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="container mt-4">
+        <h2>Фільтри</h2>
+        <form class="d-flex justify-content-center mb-4">
+            <select class="form-select w-25" id="categoryFilter" aria-label="Фільтр за категорією">
+                <option selected value="all">Виберіть категорію</option>
+                <option value="men">Чоловічий одяг</option>
+                <option value="women">Жіночий одяг</option>
+                <option value="kids">Дитячий одяг</option>
+            </select>
+            <button type="button" class="btn btn-primary ms-2" id="filterButton">Застосувати</button>
+        </form>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="container">
+        <h2>Каталог товарів</h2>
+        <div class="row" id="catalog">
+            <!-- Example of products -->
+            <div class="col-md-4 category men">
+                <div class="card">
+                    <img src="https://sneakersbanda.ua/images/detailed/2037/Balenciaga-Track-Black-Product.jpg" class="card-img-top" alt="Men's Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Balenciaga track black</h5>
+                        <p class="card-text">Ці чоловічі кросівки фірми Balenciaga точно підійдуть до вашої колекції кроівок.</p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Example of products -->
+            <div class="col-md-4 category kids">
+                <div class="card">
+                    <img src="https://parkavenue.ua/Media/shop-5099/SS24/Maison%20Margiela/2S58WS0109P1895T8046.jpg" class="card-img-top" alt="Men's Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">MM6 replica</h5>
+                        <p class="card-text">Ці дитячі кросівки підійдуть для вашої дитини і впишуться в її повсякдений вигляд</p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 category women">
+                <div class="card">
+                    <img src="https://werare.com.ua/image/cache/catalog/i/ne/fm/943e28aceda970e0c1def7bf82346a52-890x1000.jpg" class="card-img-top" alt="Women's Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Balenciaga track 2.0 pink</h5>
+                        <p class="card-text">Ідеальна жіноча пара на ваше повсякдене життя від фірми Balenciaga track.</p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category men">
+                <div class="card">
+                    <img src="https://balenciaga.dam.kering.com/m/3f66091c2ad99cdc/Small-805094TRW918700_Y.jpg?v=1" class="card-img-top" alt="Kids' Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Джинси Balenciaga</h5>
+                        <p class="card-text">Прекрасні чоловічі джинси від Balenciaga підкреслять вашу унікальність.</p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category kids">
+                <div class="card">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSPsS1KiLPcc1KeUenFZs_I7PIOmZdIO-esGUjdhopcajuilkXXOblUVKpllOvFbGwvZDVj7Cs9Gkn5-cjm_tAeoYWg7fuTGtsa5H_Ua4xmQ5P5fBOVT0PG-5s&usqp=CAE" class="card-img-top" alt="Kids' Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Спортивні штани Essential</h5>
+                        <p class="card-text">Прекрасні спортивні штани від Essential Впишуться в гардероб вашої дитини.</p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category women">
+                <div class="card">
+                    <img src="https://andcowoman.com/wp-content/uploads/2022/12/2470_11_12582.jpg" alt="Kids' Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Штани в клеш</h5>
+                        <p class="card-text">Чудові жіночі штани в клеш.
+                        Підійдуть до походів в місто
+                        </p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category men">
+                <div class="card">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQGBPSSJ5UAY1BP_VV_fGoyzz0PUL8K4jV30Sl929IOIF3pSMYefu8bSY-C5c42C6O41474OvJVmwYexIA4c69RCZRrC8GLgLkcN8IiZRFmGQQYaS23GAHa6w" alt="Kids' Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Футболка чоловіча</h5>
+                        <p class="card-text">Прекрасна футболка для чоловіків
+                        </p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category kids">
+                <div class="card">
+                    <img src="https://media3.symbol.ua/aio-images/97/66/976643f609b744c7b10bacfd33e8e87b/5db82c37-0a05-4836-ab26-1d0e8a824bf9.jpg" alt="Kids' Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Футболка дитяча</h5>
+                        <p class="card-text">Пречудовий вибір для вашої дитини
+                        </p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 category women">
+                <div class="card">
+                    <img src="https://media3.symbol.ua/aio-images/78/d0/78d0cf898acc51cf464b9edf61c17937/2763e16d-1706-4804-a324-dd4c83947a44.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Футболка жіноча</h5>
+                        <p class="card-text">Впишеться під наші Balenciaga track 2
+                        </p>
+                        <button class="btn btn-primary">Додати до кошика</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Магазин одягу. Всі права захищені.</p>
+    </footer>
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom Script for Filtering -->
+    <script>
+       document.getElementById("filterButton").addEventListener("click", function () {
+    var selectedCategory = document.getElementById("categoryFilter").value;
+    var items = document.querySelectorAll(".category");
+
+    items.forEach(function (item) {
+        // Check for the "All" value
+        if (selectedCategory === "all") {
+            item.style.display = "block";  // Show all items
+        } else if (selectedCategory === "men" && item.classList.contains("men")) {
+            item.style.display = "block";
+        } else if (selectedCategory === "women" && item.classList.contains("women")) {
+            item.style.display = "block";
+        } else if (selectedCategory === "kids" && item.classList.contains("kids")) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+});
+
+    </script>
+
+</html>
